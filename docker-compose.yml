@@ -9,7 +9,7 @@ services:
     user: ":"
     volumes:
       - ./local:/berachain/.berad
-    command: ["start", "--log_level=${LOG_LEVEL}"]
+    command: ["start"]
     ports:
       - "26660:26660"
       - "26653:26653"
