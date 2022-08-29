@@ -1,6 +1,6 @@
 # Local Berachain
 
-Local Berachain (commonly referred to as our local devnet) is a complete Berachain ecosystem containerized with Docker and orchestrated via a simple `docker-compose` file. It simplifies the way smart-contract developers test their contracts in a sandbox prior to deployment on a testnet or mainnet
+Local Berachain (commonly referred to as our local devnet) is a complete Berachain ecosystem containerized with Docker and orchestrated via a simple `docker-compose` file. It creates a simple way for smart-contract developers to test their contracts before deploying to a testnet or mainnet.
 
 Local Berachain comes preconfigured with opinionated, sensible defaults for standard testing environments. If other projects mention testing on Local Berachain, they are referring to the settings defined in this repo.
 
