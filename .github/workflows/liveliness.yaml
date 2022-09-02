@@ -24,5 +24,5 @@ jobs:
           make startd
       - name: check
         run: |
-          ./checkLiveliness.sh 10 10 10 http://localhost
+          ./check_liveliness.sh 10 10 10 http://localhost
         working-directory: .github/workflows

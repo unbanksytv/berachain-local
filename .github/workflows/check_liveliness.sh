@@ -8,25 +8,25 @@ NODEADDR=$4
 
 if [ -z "$1" ]; then
   echo "Invalid argument: missing number of iterations"
-  echo "sh checkLiveliness.sh <iterations> <sleep> <num-blocks> <node-address>"
+  echo "sh check_liveliness.sh <iterations> <sleep> <num-blocks> <node-address>"
   exit 1
 fi
 
 if [ -z "$2" ]; then
   echo "Invalid argument: missing sleep duration"
-  echo "sh checkLiveliness.sh <iterations> <sleep> <num-blocks> <node-address>"
+  echo "sh check_liveliness.sh <iterations> <sleep> <num-blocks> <node-address>"
   exit 1
 fi
 
 if [ -z "$3" ]; then
   echo "Invalid argument: missing number of blocks"
-  echo "sh checkLiveliness.sh <iterations> <sleep> <num-blocks> <node-address>"
+  echo "sh check_liveliness.sh <iterations> <sleep> <num-blocks> <node-address>"
   exit 1
 fi
 
 if [ -z "$4" ]; then
   echo "Invalid argument: missing node address"
-  echo "sh checkLiveliness.sh <iterations> <sleep> <num-blocks> <node-address>"
+  echo "sh check_liveliness.sh <iterations> <sleep> <num-blocks> <node-address>"
   exit 1
 fi
 
