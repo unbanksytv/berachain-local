@@ -7,7 +7,7 @@ on:
     - cron: "0 8 * * *" # 3:00am UTC-5
 
 jobs:
-  check-livelyness:
+  check-liveliness:
     timeout-minutes: 20
     strategy:
       matrix:
