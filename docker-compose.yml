@@ -5,11 +5,11 @@ services:
   node:
     env_file:
       - .env
-    image: berachain-node:0.0.0
+    image: ghcr.io/berachain/berachain-node:${VERSION}
     user: ":"
     volumes:
       - ./:/berachain/.berad
-    command: ["start", "log_level=debug"]
+    command: ["start"]
     ports:
       - "26660:26660"
       - "26653:26653"
@@ -25,7 +25,7 @@ services:
       - node
     env_file:
       - .env
-    image: berachain-node:0.0.0
+    image: ghcr.io/berachain/berachain-node:${VERSION}
     user: ":"
     environment:
       - PRICE_FEEDER_PASS=${PRICE_FEEDER_PASS}
