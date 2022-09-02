@@ -7,8 +7,8 @@ on:
     - cron: "0 8 * * *" # 3:00am UTC-5
 
 jobs:
-  check-livelyness:
-    name: Check Livelyness
+  test-liveliness:
+    name: Check Liveliness
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest]
@@ -24,5 +24,5 @@ jobs:
           make startd
       - name: check
         run: |
-          ./checkLivelyness.sh 10 10 10 http://localhost
+          ./checkLiveliness.sh 10 10 10 http://localhost
         working-directory: .github/workflows
