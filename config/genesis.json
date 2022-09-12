@@ -454,8 +454,7 @@
     "valmgr": {
       "params": {
         "max_validators": 100,
-        "historical_entries": 10000,
-        "pol_enabled": true
+        "historical_entries": 10000
       },
       "last_total_power": "0",
       "last_validator_powers": [],
