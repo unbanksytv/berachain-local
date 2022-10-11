@@ -5,6 +5,7 @@ on:
     branches: main
   schedule: 
     - cron: "0 8 * * *" # 3:00am UTC-5
+  workflow_dispatch:
 
 jobs:
   check-liveliness:
