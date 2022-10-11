@@ -419,7 +419,7 @@
         }
       ]
     },
-    "inflation": {
+    "rewards": {
       "params": {
         "mint_denom": "abera",
         "blocks_per_year": "10519200",
