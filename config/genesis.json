@@ -302,7 +302,15 @@
       "denom_metadata": []
     },
     "bgt": {
-      "params": {}
+      "params": {
+        "bribe_commission_rate": "0.100000000000000000",
+        "bribe_fee": [
+          {
+            "denom": "bera",
+            "amount": "1"
+          }
+        ]
+      }
     },
     "bic": {
       "params": {
