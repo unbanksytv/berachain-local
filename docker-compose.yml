@@ -5,7 +5,7 @@ services:
   node:
     env_file:
       - .env
-    image: ghcr.io/berachain/berachain-node:${VERSION}
+    image: berachain-node:0.0.0
     user: ":"
     volumes:
       - ./:/berachain/.berad
@@ -19,21 +19,21 @@ services:
       - "8545:8545"
       - "8546:8546"
 
-  # The Oracle Feeder Process
-  oracle:
-    depends_on:
-      - node
-    env_file:
-      - .env
-    image: ghcr.io/berachain/berachain-node:${VERSION}
-    user: ":"
-    environment:
-      - PRICE_FEEDER_PASS=${PRICE_FEEDER_PASS}
-    volumes:
-      - ./:/berachain/.berad
-    command: ["oracle-feeder", "/berachain/.berad/oracle/config.toml"]
-    ports:
-      - "7171:7171"
+  # # The Oracle Feeder Process
+  # oracle:
+  #   depends_on:
+  #     - node
+  #   env_file:
+  #     - .env
+  #   image: ghcr.io/berachain/berachain-node:${VERSION}
+  #   user: ":"
+  #   environment:
+  #     - PRICE_FEEDER_PASS=${PRICE_FEEDER_PASS}
+  #   volumes:
+  #     - ./:/berachain/.berad
+  #   command: ["oracle-feeder", "/berachain/.berad/oracle/config.toml"]
+  #   ports:
+  #     - "7171:7171"
 
 networks:
   default:
